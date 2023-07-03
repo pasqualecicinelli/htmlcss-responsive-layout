@@ -44,10 +44,14 @@ section {
 
 /*--SECTION--STRATEGIC--*/
 
-.full-container .card {
+#strategic .card {
     width: 100%;
     padding: 1rem;
     background-color: brown;
+}
+
+#strategic{
+    width: 100%;
 }
 
 /*--SECTION--TESTIMONIAL--*/
@@ -156,7 +160,7 @@ section {
         width: 100%;
     }
 
-    /*--MEDI--ABOUT--US--*/
+    /*--MEDIA--ABOUT--US--*/
 
     #about-us .col {
         width: calc(100% / 2);
@@ -167,26 +171,33 @@ section {
         flex-wrap: wrap;
     }
 
+     /*--MEDIA--GET--*/
+
+     #get .container{
+        width: 80%;
+     }
+
 }
 
 /*--DESKTOP--*/
 
 @media screen and (min-width:992px) {
 
-    #strategic .full-container .row {
+    #strategic .row {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
-    #strategic .full-container .col {
-        width: calc(100% / 2);
+    #strategic .col {
+        width: calc(80% / 2);
+
     }
 
-    #strategic .full-container .col:last-child {
+    #strategic .col:last-child {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-
     }
 
     /*--MEDIA--BENEFITS-*/
@@ -217,4 +228,9 @@ section {
     #about-us .col-30{
         width: 30%;
     }
+     /*--MEDIA--GET--*/
+
+     #get .container{
+        width: 60%;
+     }
 }
