@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 
-/*--SECTION--*/
+/*--SECTION--INTRO--*/
 
 section {
     padding: 3rem 0;
@@ -30,16 +30,19 @@ section {
 
 }
 
-#intro .card {
+#intro .card{
     height: 100%;
     width: 100%;
     padding: 1rem;
     background-color: brown;
 }
-.box-content{
+
+.box-content {
     min-height: 50px;
     border: 3px solid blue;
 }
+
+/*--SECTION--STRATEGIC--*/
 
 .container {
     margin-left: auto;
@@ -47,11 +50,17 @@ section {
     padding: 0 1rem;
 }
 
-.debug {
-    border: 3px dashed red;
-    min-height: 80px;
+.full-container {
+    max-width: 100%;
 }
 
+.full-container .card{
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
+}
+
+        /*--GENERAL--RULES--*/
 
 .row {
     margin-left: -1rem;
@@ -61,6 +70,19 @@ section {
 .col {
     padding: 1rem;
 
+}
+
+
+        /*--DEBUG--*/
+
+.debug {
+    border: 3px dashed red;
+    min-height: 80px;
+}
+
+.debug-2 {
+    border: 3px dashed red;
+    min-height: 80px;
 }
 
 /*--TABLET--*/
@@ -78,7 +100,6 @@ section {
 
     #intro .col {
         display: flex;
-
         width: calc(100% / 3);
     }
 
@@ -88,5 +109,26 @@ section {
 
     #intro .card>.box-50 {
         width: 50%;
+    }
+}
+
+        /*--DESKTOP--*/
+
+@media screen and (min-width:992px) {
+
+    .full-container .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .full-container .col{
+        width: calc(100% / 2);
+    }
+
+    .full-container .col:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
     }
 }
