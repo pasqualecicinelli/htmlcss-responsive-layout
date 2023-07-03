@@ -68,6 +68,27 @@ section {
     margin: 0 auto;
 }
 
+/*--SECTION--ABOUT--US-*/
+
+#about-us {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*--SECTION--GET-*/
+
+#get{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*--SECTION--FOOT-*/
+
+#foot {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 /*--GENERAL--RULES--*/
 
@@ -174,7 +195,8 @@ section {
      /*--MEDIA--GET--*/
 
      #get .container{
-        width: 80%;
+        margin-left: 1rem;
+        margin-right: 1rem;
      }
 
 }
@@ -231,6 +253,15 @@ section {
      /*--MEDIA--GET--*/
 
      #get .container{
-        width: 60%;
+        margin-left: 2rem;
+        margin-right: 2rem;
      }
+
+      /*--MEDIA--FOOT--*/
+
+      #foot .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+     }
+}
 }
