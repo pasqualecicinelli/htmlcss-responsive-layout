@@ -52,11 +52,17 @@ section {
 
 /*--SECTION--TESTIMONIAL--*/
 
-#container-testimonial{
+#testimonial {
     width: 100%;
     margin: 0 auto;
 }
 
+/*--MEDIA--BENEFITS-*/
+
+#benefits {
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 /*--GENERAL--RULES--*/
@@ -122,29 +128,43 @@ section {
 
     /*--MEDIA--TESTIMONIAL--*/
 
-    #container-testimonial .card-img{
+    #testimonial .card-img {
         max-width: 30%;
     }
-    #container-testimonial .card{
+
+    #testimonial .card {
         max-width: 70%;
     }
-    #container-testimonial .col{
+
+    #testimonial .col {
         display: flex;
         max-width: 100%;
     }
 
     /*--MEDIA--BENEFITS-*/
 
-    #benefits .col{
+    #benefits .col {
         width: calc(100% / 2);
     }
-    #benefits .row{
+
+    #benefits .row {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .col-title{
+
+    .col-title {
         width: 100%;
+    }
+
+    /*--MEDI--ABOUT--US--*/
+
+    #about-us .col {
+        width: calc(100% / 2);
+    }
+
+    #about-us .row {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
@@ -168,17 +188,33 @@ section {
         align-items: flex-end;
 
     }
-     /*--MEDIA--BENEFITS-*/
 
-     #benefits .col{
+    /*--MEDIA--BENEFITS-*/
+
+    #benefits .col {
         width: calc(100% / 3);
     }
-    #benefits .row{
+
+    #benefits .row {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    #benefits .col-title{
+
+    #benefits .col-title {
         width: 100%;
+    }
+
+    /*--MEDI--ABOUT--US--*/
+
+    #about-us .col:first-child {
+        width: 70%;
+    }
+
+    #about-us .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #about-us .col-30{
+        width: 30%;
     }
 }
