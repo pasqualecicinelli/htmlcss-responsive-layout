@@ -30,7 +30,7 @@ section {
 
 }
 
-#intro .card{
+#intro .card {
     height: 100%;
     width: 100%;
     padding: 1rem;
@@ -44,6 +44,21 @@ section {
 
 /*--SECTION--STRATEGIC--*/
 
+.full-container .card {
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
+}
+
+/*--SECTION--TESTIMONIAL--*/
+
+#container-testimonial{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*--GENERAL--RULES--*/
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -53,14 +68,6 @@ section {
 .full-container {
     max-width: 100%;
 }
-
-.full-container .card{
-    width: 100%;
-    padding: 1rem;
-    background-color: brown;
-}
-
-        /*--GENERAL--RULES--*/
 
 .row {
     margin-left: -1rem;
@@ -73,7 +80,7 @@ section {
 }
 
 
-        /*--DEBUG--*/
+/*--DEBUG--*/
 
 .debug {
     border: 3px dashed red;
@@ -110,9 +117,24 @@ section {
     #intro .card>.box-50 {
         width: 50%;
     }
+
+    /*--MEDIA--TESTIMONIAL--*/
+
+    #container-testimonial .card-img{
+        max-width: 30%;
+    }
+    #container-testimonial .card{
+        max-width: 70%;
+    }
+    #container-testimonial .col{
+        display: flex;
+        max-width: 100%;
+    }
+
+
 }
 
-        /*--DESKTOP--*/
+/*--DESKTOP--*/
 
 @media screen and (min-width:992px) {
 
@@ -121,11 +143,11 @@ section {
         flex-wrap: wrap;
     }
 
-    .full-container .col{
+    .full-container .col {
         width: calc(100% / 2);
     }
 
-    .full-container .col:last-child{
+    .full-container .col:last-child {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
