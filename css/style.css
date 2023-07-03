@@ -60,12 +60,21 @@ section {
     width: 100%;
     margin: 0 auto;
 }
-
+#testimonial .card, .card-img{
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
+}
 /*--SECTION--BENEFITS-*/
 
 #benefits {
     width: 100%;
     margin: 0 auto;
+}
+#benefits .card {
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
 }
 
 /*--SECTION--ABOUT--US-*/
@@ -73,6 +82,11 @@ section {
 #about-us {
     width: 100%;
     margin: 0 auto;
+}
+#about-us .card {
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
 }
 
 /*--SECTION--GET-*/
@@ -82,12 +96,23 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+#get .card {
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
+}
 /*--SECTION--FOOT-*/
 
 #foot {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+#foot .card {
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
 }
 
 /*--GENERAL--RULES--*/
@@ -192,12 +217,10 @@ section {
         flex-wrap: wrap;
     }
 
-     /*--MEDIA--GET--*/
-
-     #get .container{
-        margin-left: 1rem;
-        margin-right: 1rem;
-     }
+         /*--MEDIA--GET--*/
+    #get .container{
+        
+    }
 
 }
 
@@ -251,17 +274,16 @@ section {
         width: 30%;
     }
      /*--MEDIA--GET--*/
+    
+    #get .container{
+        
+    }
+    
+    @media screen and (min-width:1200px){
 
-     #get .container{
-        margin-left: 2rem;
-        margin-right: 2rem;
-     }
-
-      /*--MEDIA--FOOT--*/
-
-      #foot .container{
-        margin-left: 2rem;
-        margin-right: 2rem;
-     }
-}
-}
+        .container{
+            max-width:1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
