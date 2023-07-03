@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*--HEADER--*/
+
+#header {
+    height: 80px;
+    line-height: 80px;
+    background-color: skyblue;
+    color: white;
+}
+
+#header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--SECTION--*/
+
+section {
+    padding: 3rem 0;
+}
+
+#intro {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#intro .card {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    background-color: brown;
+}
+.box-content{
+    min-height: 50px;
+    border: 3px solid blue;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.debug {
+    border: 3px dashed red;
+    min-height: 80px;
+}
+
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.col {
+    padding: 1rem;
+
+}
+
+/*--TABLET--*/
+
+@media screen and (min-width:576px) {
+
+    #intro .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #intro .col:first-child {
+        width: calc(100% / 3 * 2);
+    }
+
+    #intro .col {
+        display: flex;
+
+        width: calc(100% / 3);
+    }
+
+    #intro .col:first-child .card {
+        display: flex;
+    }
+
+    #intro .card>.box-50 {
+        width: 50%;
+    }
+}
