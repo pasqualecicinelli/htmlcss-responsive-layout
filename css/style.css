@@ -42,14 +42,18 @@ section {
     --dark-grey:#5A6E7F;
 }
 
-button{
-    border-radius: 20px;
-    border: none;
-    padding: 0.5rem 1rem;
-}
 
 .card{
     border-radius: 1.5rem;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    font: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    border: none;
 }
 
 /*--HEADER--*/
@@ -77,6 +81,10 @@ button{
 .image img{
     padding-top: 20px;
 }
+#header button{
+    padding: 0.5rem 1rem;
+}
+
 
 /*--SECTION--INTRO--*/
 
@@ -110,10 +118,7 @@ button{
 #intro button{
     background-color: var(--blue-sky);
     color: var(--white);
-    padding: 0.5rem 2rem;
-    font: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 3px;
+    
 }
 #intro .box-50>.box-content{
     text-align: left;
@@ -226,12 +231,29 @@ button{
     background-color: var(--white);
     color: var(--purple);
 }
-
-.col-title {
-    width: 100%;
-    padding: 1rem;
+#benefits h2, #benefits h3, #benefits p{
+padding: 0.5rem;
 }
 
+#benefits p{
+color: var(--dark-grey);
+}
+
+#benefits button{
+    margin-top:0.5rem ;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+#benefits .col-title {
+    width: 100%;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+#benefits h2{
+    font-size: 2rem;
+}
 /*--SECTION--ABOUT--US-*/
 
 #about-us {
