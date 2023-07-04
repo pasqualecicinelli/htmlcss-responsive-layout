@@ -4,13 +4,61 @@
     padding: 0;
 }
 
+/*--GENERAL--RULES--*/
+
+section {
+    padding: 3rem 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.full-container {
+    max-width: 100%;
+    background-color: var(--purple);
+}
+
+.row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.col {
+    padding: 1rem;
+
+}
+
+:root {
+    --blue-sky: #0084FD;
+    --light-blue: #B5DDFF;
+    --purple: #9792E4;
+    --white: #FFFFFF;
+    --gold: #FDC15F;
+    --black: #333333;
+    --dark-grey:#5A6E7F;
+}
+
+button{
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.card{
+    border-radius: 2rem;
+}
+
 /*--HEADER--*/
 
 #header {
     height: 80px;
     line-height: 80px;
-    background-color: skyblue;
-    color: white;
+    background-color: var(--blue-sky);
+    color: var(--white);
 }
 
 #header>.container {
@@ -18,11 +66,19 @@
     justify-content: space-between;
 }
 
-/*--SECTION--INTRO--*/
-
-section {
-    padding: 3rem 0;
+ ul{
+    display: none;
 }
+
+.menu{
+    display: block;
+}
+
+.image img{
+    padding-top: 20px;
+}
+
+/*--SECTION--INTRO--*/
 
 #intro {
     width: 100%;
@@ -34,7 +90,7 @@ section {
     height: 100%;
     width: 100%;
     padding: 1rem;
-    background-color: brown;
+    background-color: var(--light-blue);
 }
 
 .box-content {
@@ -50,31 +106,43 @@ section {
     background-color: brown;
 }
 
-#strategic{
+#strategic {
     width: 100%;
 }
+
 
 /*--SECTION--TESTIMONIAL--*/
 
 #testimonial {
     width: 100%;
     margin: 0 auto;
+    background-color: var(--white);
 }
-#testimonial .card, .card-img{
+
+#testimonial .card,
+.card-img {
     width: 100%;
     padding: 1rem;
-    background-color: brown;
+    background-color: var(--purple);
 }
+
 /*--SECTION--BENEFITS-*/
 
 #benefits {
     width: 100%;
     margin: 0 auto;
 }
+
 #benefits .card {
     width: 100%;
     padding: 1rem;
-    background-color: brown;
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.col-title {
+    width: 100%;
+    padding: 1rem;
 }
 
 /*--SECTION--ABOUT--US-*/
@@ -83,6 +151,7 @@ section {
     width: 100%;
     margin: 0 auto;
 }
+
 #about-us .card {
     width: 100%;
     padding: 1rem;
@@ -91,16 +160,18 @@ section {
 
 /*--SECTION--GET-*/
 
-#get{
+#get {
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+
 #get .card {
     width: 100%;
     padding: 1rem;
     background-color: brown;
 }
+
 /*--SECTION--FOOT-*/
 
 #foot {
@@ -115,27 +186,10 @@ section {
     background-color: brown;
 }
 
-/*--GENERAL--RULES--*/
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
+#foot .full-container {
+    background-color: var(--black);
 }
 
-.full-container {
-    max-width: 100%;
-}
-
-.row {
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-
-.col {
-    padding: 1rem;
-
-}
 
 
 /*--DEBUG--*/
@@ -150,9 +204,22 @@ section {
     min-height: 80px;
 }
 
+/* -----SIMBOLI
+laptop <i class="fa-solid fa-laptop-code"></i>
+compasso <i class="fa-solid fa-compass-drafting"></i>
+megafono <i class="fa-solid fa-bullhorn"></i>
+freccia giù <i class="fa-solid fa-arrow-down"></i>
+virgolette su <i class="fa-solid fa-quote-left"></i>
+virgolette giù <i class="fa-solid fa-quote-right"></i>
+
+*/
+
 /*--TABLET--*/
 
 @media screen and (min-width:576px) {
+
+
+    /*--MEDIA--INTRO--*/
 
     #intro .row {
         display: flex;
@@ -168,27 +235,24 @@ section {
         width: calc(100% / 3);
     }
 
-    #intro .col:first-child .card {
-        display: flex;
-    }
 
-    #intro .card>.box-50 {
-        width: 50%;
-    }
 
     /*--MEDIA--TESTIMONIAL--*/
 
     #testimonial .card-img {
-        max-width: 30%;
+        width: 30%;
     }
 
     #testimonial .card {
-        max-width: 70%;
+        width: 70%;
     }
 
     #testimonial .col {
         display: flex;
-        max-width: 100%;
+        width: 100%;
+    }
+    #testimonial .col:first-child .card{
+        width: 100%;
     }
 
     /*--MEDIA--BENEFITS-*/
@@ -202,24 +266,21 @@ section {
         flex-wrap: wrap;
     }
 
-    .col-title {
-        width: 100%;
-    }
-
     /*--MEDIA--ABOUT--US--*/
 
-    #about-us .col {
-        width: calc(100% / 2);
+    #about-us .col:first-child {
+        width: 60%;
+    }
+
+    #about-us .col:last-child {
+        width: 40%;
     }
 
     #about-us .row {
         display: flex;
         flex-wrap: wrap;
-    }
-
-         /*--MEDIA--GET--*/
-    #get .container{
-        
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
 }
@@ -228,6 +289,32 @@ section {
 
 @media screen and (min-width:992px) {
 
+    /*--MEDIA--HEADER--*/
+
+.fa-bars{
+    display: none;
+}
+
+.menu ul {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu li{
+    margin: 0 10px;
+}
+
+    /*--MEDIA--INTRO--*/
+
+    #intro .col:first-child .card {
+        display: flex;
+    }
+
+    #intro .card>.box-50 {
+        width: 50%;
+    }
+
     #strategic .row {
         display: flex;
         flex-wrap: wrap;
@@ -235,14 +322,18 @@ section {
     }
 
     #strategic .col {
-        width: calc(80% / 2);
-
+        width: calc(100% / 2);
     }
 
     #strategic .col:last-child {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
+    }
+
+    #strategic .row {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     /*--MEDIA--BENEFITS-*/
@@ -263,27 +354,26 @@ section {
     /*--MEDI--ABOUT--US--*/
 
     #about-us .col:first-child {
-        width: 70%;
+        width: calc(100% / 3 * 2)
+    }
+
+    #about-us .col:last-child {
+        width: calc(100% / 3)
     }
 
     #about-us .row {
         display: flex;
         flex-wrap: wrap;
     }
-    #about-us .col-30{
-        width: 30%;
-    }
-     /*--MEDIA--GET--*/
-    
-    #get .container{
-        
-    }
-    
-    @media screen and (min-width:1200px){
 
-        .container{
-            max-width:1200px;
+    /*--MEDIA--GET--*/
+
+    @media screen and (min-width:1200px) {
+
+        .container {
+            max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
         }
     }
+}

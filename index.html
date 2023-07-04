@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -12,8 +17,16 @@
 
     <header id="header">
         <div class="container">
-            <div>Logo</div>
-            <nav>Menù</nav>
+            <div class="image"><img src="./img/logo.png" alt=""></div>
+            <nav class="menu"><i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li>Planning</li>
+                    <li>Testimonials</li>
+                    <li>Feautures</li>
+                    <li> About Us</li>
+                    <li> <button>Get Started</button></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -68,22 +81,23 @@
 
         <!--SECTION--STRATEGIC-->
 
-        <section class="full-container" id="strategic">
-            <div class="container debug-2">
-                <div class="row">
-                    <div class="col debug-2">
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
-                    </div>
-                    <div class="col debug-2">
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
+        <section id="strategic">
+            <div class="full-container">
+                <div class="container debug-2">
+                    <div class="row">
+                        <div class="col debug-2">
+                            <div class="card debug-2">img</div>
+                            <div class="card debug-2">testo</div>
+                            <div class="card debug-2">testo</div>
+                        </div>
+                        <div class="col debug-2">
+                            <div class="card debug-2">img</div>
+                            <div class="card debug-2">testo</div>
+                            <div class="card debug-2">testo</div>
+                            <div class="card debug-2">testo</div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -93,9 +107,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col debug">
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
-                        <div class="card debug-2"></div>
+                        <div class="card debug-2">
+                            <div class="box-content debug-2"></div>
+                            <div class="box-content debug-2"></div>
+                            <div class="box-content debug-2"></div>
+                        </div>
                     </div>
                     <div class="col debug">
                         <div class="card-img debug-2">img</div>
@@ -124,99 +140,103 @@
 
         <!--SECTION--BENEFITS-->
 
-        <section class="full-container" id="benefits">
-            <div class="container">
-                <div class="row">
-                    <div class="col-title debug">
-                        <div class="card">title</div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+        <section id="benefits">
+            <div class="full-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-title debug">
+                            <div class="card">title</div>
                         </div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col debug">
-                        <div class="card">
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>testo</div>
-                            <div>button</div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
+                        </div>
+                        <div class="col debug">
+                            <div class="card">
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>testo</div>
+                                <div>button</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!--SECTION--ABOUT--US-->
 
-        <section class="container" id="about-us">
-            <div class="row">
-                <div class="col debug">
-                    <div class="card">
-                        <div>title</div>
-                        <p>cs</p>
-                        <p>cd</p>
+        <section id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col debug">
+                        <div class="card">
+                            <div>title</div>
+                            <p>cs</p>
+                            <p>cd</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col col-30 debug">
-                    <div class="card">
-                        <div>img</div>
-                        <div>testo</div>
-                        <div>button</div>
+                    <div class="col debug">
+                        <div class="card">
+                            <div>img</div>
+                            <div>testo</div>
+                            <div>button</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!--SECTION--GET-->
 
-        <section class="full-container" id="get">
-            <div class="container debug">
-                <div class="row">
-                    <div class="col">
-                        <div class="card debug">testo</div>
-                        <div class="card debug">title</div>
-                        <div class="card debug">title2</div>
-                        <p class="card debug">testo</p>
-                        <div class="card debug">button</div>
-                        <div class="card debug">testo</div>
+        <section id="get">
+            <div class="full-container">
+                <div class="container debug">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card debug">testo</div>
+                            <div class="card debug">title</div>
+                            <div class="card debug">title2</div>
+                            <p class="card debug">testo</p>
+                            <div class="card debug">button</div>
+                            <div class="card debug">testo</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,18 +244,19 @@
         <!--SECTION--FOOTER-->
 
 
-        <footer class="full-container" id="foot">
-            <div class="container debug">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <p>testo</p>
-                            <p>testo</p>
+        <footer id="foot">
+            <div class="full-container">
+                <div class="container debug">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <p>testo</p>
+                                <p>testo</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </footer>
     </main>
 </body>
