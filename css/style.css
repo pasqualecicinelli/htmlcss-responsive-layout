@@ -136,15 +136,39 @@ button{
 /*--SECTION--STRATEGIC--*/
 
 #strategic .card {
-    width: 100%;
     padding: 1rem;
-    background-color: brown;
 }
 
 #strategic {
     width: 100%;
 }
 
+#strategic .card-content img{
+    width: 100%;
+}
+
+#strategic .col:last-child .card{
+    text-align: center;
+    background-color: var(--white);
+}
+#strategic .card-content{
+    padding: 0.75rem;
+}
+#strategic .circle{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--purple);
+    text-align: center;
+    line-height: 50px;
+}
+#strategic .col:last-child p{
+    font-style: italic;
+}
+#strategic .col:first-child .card{
+    color: var(--white);
+}
 
 /*--SECTION--TESTIMONIAL--*/
 
@@ -240,7 +264,7 @@ button{
 }
 
 /* -----SIMBOLI
-freccia giù <i class="fa-solid fa-arrow-down"></i>
+freccia giù 
 virgolette su <i class="fa-solid fa-quote-left"></i>
 virgolette giù <i class="fa-solid fa-quote-right"></i>
 
@@ -350,20 +374,27 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         width: 50%;
     }
 
+     /*--MEDIA--STRATEGIC--*/
+
     #strategic .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;        
     }
 
     #strategic .col {
         width: calc(100% / 2);
     }
 
-    #strategic .col:last-child {
+    #strategic .col:first-child{
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
+       justify-content: flex-end;
+    }
+
+    #strategic .col:last-child {
+        padding: 8rem 0 2rem;
+    }
+
+    #strategic .card{
+        width: 75%;
     }
 
     #strategic .row {
