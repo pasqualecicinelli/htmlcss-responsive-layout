@@ -178,11 +178,39 @@ button{
     background-color: var(--white);
 }
 
-#testimonial .card,
-.card-img {
+#testimonial .card{
     width: 100%;
     padding: 1rem;
     background-color: var(--purple);
+}
+
+#testimonial .col:first-child .card{
+    background-color: var(--white);
+}
+#testimonial .box-content{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+#testimonial .card-img{
+   text-align: center;
+}
+#testimonial img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#testimonial h2{
+    color: var(--purple);
+}
+
+#testimonial h3, #testimonial p{
+    color: var(--white);
+    padding: 1rem;
+}
+#testimonial h3{
+    text-align: center;
 }
 
 /*--SECTION--BENEFITS-*/
@@ -302,16 +330,26 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         width: 30%;
     }
 
-    #testimonial .card {
+    #testimonial .info {
         width: 70%;
     }
 
-    #testimonial .col {
+    #testimonial .card {
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        
     }
     #testimonial .col:first-child .card{
         width: 100%;
+    }
+    #testimonial h3{
+        text-align: left;
+    }
+    #testimonial p,#testimonial h3{
+        font-size: 0.75rem;
+    }
+    #testimonial .info{
+        padding-top: 2rem;
     }
 
     /*--MEDIA--BENEFITS-*/
