@@ -49,9 +49,7 @@ section {
 
 button{
     padding: 0.5rem 2rem;
-    font: 1.5rem;
     font-weight: bold;
-    letter-spacing: 3px;
     border-radius: 20px;
     border: none;
 }
@@ -118,6 +116,7 @@ button{
 #intro button{
     background-color: var(--blue-sky);
     color: var(--white);
+    letter-spacing: 3px;
     
 }
 #intro .box-50>.box-content{
@@ -259,12 +258,50 @@ color: var(--dark-grey);
 #about-us {
     width: 100%;
     margin: 0 auto;
+    background-color: var(--white);
 }
 
 #about-us .card {
     width: 100%;
     padding: 1rem;
-    background-color: brown;
+    
+}
+#about-us .card-img{
+    position: relative;
+}
+#about-us img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+#about-us h2{
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+#about-us p, #about-us h2{
+    padding: 1rem;
+}
+
+#about-us h3, #about-us button{
+    margin: 0.5rem;
+}
+#about-us i.fa-quote-left{
+    position: absolute;
+    top: 10px;
+    right: 300px;
+    font-size: 2rem;
+    color: var(--purple);
+}
+#about-us h3{
+    color: var(--purple);
+}
+
+#about-us button{
+    background-color: var(--purple);
+    color: var(--white);
 }
 
 /*--SECTION--GET-*/
@@ -401,6 +438,10 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    #about-us i.fa-quote-left{
+        right: 0px;
+    }
+    
 
 }
 
@@ -490,6 +531,9 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
     #about-us .row {
         display: flex;
         flex-wrap: wrap;
+    }
+    #about-us i.fa-quote-left{
+        right: 110px;
     }
 
     /*--MEDIA--GET--*/
