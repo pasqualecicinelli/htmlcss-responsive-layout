@@ -7,7 +7,10 @@
 /*--GENERAL--RULES--*/
 
 section {
-    padding: 3rem 0;
+    padding: 2rem 0;
+}
+section:last-child{
+    padding-bottom: 0;
 }
 
 .container {
@@ -365,7 +368,7 @@ ul {
     color: var(--gold);
 }
 
-#get .card {
+#get .card, #get a {
     color: var(--white);
 }
 #get .card:first-child{
@@ -383,33 +386,30 @@ ul {
 #foot .card {
     width: 100%;
     padding: 1rem;
-    background-color: brown;
 }
 
 #foot .full-container {
     background-color: var(--black);
 }
 
-
-
-/*--DEBUG--*/
-
-.debug {
-    border: 3px dashed red;
-    min-height: 80px;
+#foot p{
+    color: var(--white);
+    max-width: 480px;
+    margin: 0 auto;
 }
 
-.debug-2 {
-    border: 3px dashed red;
-    min-height: 80px;
+#foot p:last-child{
+    padding-top: 3rem;
 }
 
-/* -----SIMBOLI
-freccia giù 
-virgolette su <i class="fa-solid fa-quote-left"></i>
-virgolette giù <i class="fa-solid fa-quote-right"></i>
+#foot a{
+    color: var(--blue-sky);
+}
 
-*/
+#foot .col {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 /*--TABLET--*/
 
