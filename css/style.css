@@ -39,15 +39,15 @@ section {
     --white: #FFFFFF;
     --gold: #FDC15F;
     --black: #333333;
-    --dark-grey:#5A6E7F;
+    --dark-grey: #5A6E7F;
 }
 
 
-.card{
+.card {
     border-radius: 1.5rem;
 }
 
-button{
+button {
     padding: 0.5rem 2rem;
     font-weight: bold;
     border-radius: 20px;
@@ -68,18 +68,19 @@ button{
     justify-content: space-between;
 }
 
- ul{
+ul {
     display: none;
 }
 
-.menu{
+.menu {
     display: block;
 }
 
-.image img{
+.image img {
     padding-top: 20px;
 }
-#header button{
+
+#header button {
     padding: 0.5rem 1rem;
 }
 
@@ -98,41 +99,43 @@ button{
     background-color: var(--light-blue);
 }
 
-#intro .box-content{
+#intro .box-content {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-#intro .box-content img{
+#intro .box-content img {
     width: 200px;
-    
+
     margin-bottom: -5px;
 }
 
-#intro h3{
+#intro h3 {
     color: var(--blue-sky);
     font-size: 1.5rem;
 }
 
-#intro button{
+#intro button {
     background-color: var(--blue-sky);
     color: var(--white);
     letter-spacing: 3px;
-    
+
 }
-#intro .box-50>.box-content{
+
+#intro .box-50>.box-content {
     text-align: left;
 }
 
-#intro p.box-content{
+#intro p.box-content {
     padding-bottom: 1.5rem;
     color: var(--dark-grey);
     font-weight: bold;
 }
 
-#intro .box-content{
+#intro .box-content {
     text-align: center;
 }
-#intro .fa-solid{
+
+#intro .fa-solid {
     font-size: 4rem;
     color: var(--blue-sky);
 }
@@ -147,18 +150,20 @@ button{
     width: 100%;
 }
 
-#strategic .card-content img{
+#strategic .card-content img {
     width: 100%;
 }
 
-#strategic .col:last-child .card{
+#strategic .col:last-child .card {
     text-align: center;
     background-color: var(--white);
 }
-#strategic .card-content{
+
+#strategic .card-content {
     padding: 0.75rem;
 }
-#strategic .circle{
+
+#strategic .circle {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -167,10 +172,12 @@ button{
     text-align: center;
     line-height: 50px;
 }
-#strategic .col:last-child p{
+
+#strategic .col:last-child p {
     font-style: italic;
 }
-#strategic .col:first-child .card{
+
+#strategic .col:first-child .card {
     color: var(--white);
 }
 
@@ -182,38 +189,44 @@ button{
     background-color: var(--white);
 }
 
-#testimonial .card{
+#testimonial .card {
     width: 100%;
     padding: 1rem;
     background-color: var(--purple);
 }
 
-#testimonial .col:first-child .card{
+#testimonial .col:first-child .card {
     background-color: var(--white);
 }
-#testimonial .box-content{
+
+#testimonial .box-content {
     text-align: center;
     width: 100%;
     padding: 1rem;
 }
-#testimonial .card-img{
-   text-align: center;
+
+#testimonial .card-img {
+    text-align: center;
 }
-#testimonial img{
+
+#testimonial img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
-#testimonial h2{
+
+#testimonial h2 {
     color: var(--purple);
 }
 
-#testimonial h3, #testimonial p{
+#testimonial h3,
+#testimonial p {
     color: var(--white);
     padding: 1rem;
 }
-#testimonial h3{
+
+#testimonial h3 {
     text-align: center;
 }
 
@@ -230,16 +243,19 @@ button{
     background-color: var(--white);
     color: var(--purple);
 }
-#benefits h2, #benefits h3, #benefits p{
-padding: 0.5rem;
+
+#benefits h2,
+#benefits h3,
+#benefits p {
+    padding: 0.5rem;
 }
 
-#benefits p{
-color: var(--dark-grey);
+#benefits p {
+    color: var(--dark-grey);
 }
 
-#benefits button{
-    margin-top:0.5rem ;
+#benefits button {
+    margin-top: 0.5rem;
     background-color: var(--purple);
     color: var(--white);
 }
@@ -250,9 +266,11 @@ color: var(--dark-grey);
     color: var(--white);
     text-align: center;
 }
-#benefits h2{
+
+#benefits h2 {
     font-size: 2rem;
 }
+
 /*--SECTION--ABOUT--US-*/
 
 #about-us {
@@ -264,42 +282,51 @@ color: var(--dark-grey);
 #about-us .card {
     width: 100%;
     padding: 1rem;
-    
+
 }
-#about-us .card-img{
+
+#about-us .card-img {
+    width: 150px;
+    height: 150px;
     position: relative;
 }
-#about-us img{
+
+#about-us img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
     padding: 0.5rem;
 }
-#about-us h2{
+
+#about-us h2 {
     font-size: 2rem;
     color: var(--purple);
 }
 
-#about-us p, #about-us h2{
+#about-us p,
+#about-us h2 {
     padding: 1rem;
 }
 
-#about-us h3, #about-us button{
+#about-us h3,
+#about-us button {
     margin: 0.5rem;
 }
-#about-us i.fa-quote-left{
+
+#about-us i.fa-quote-left {
     position: absolute;
-    top: 10px;
-    right: 300px;
-    font-size: 2rem;
-    color: var(--purple);
-}
-#about-us h3{
+    top: 0px;
+    right: 0px;
+    font-size: 3rem;
     color: var(--purple);
 }
 
-#about-us button{
+#about-us h3 {
+    color: var(--purple);
+}
+
+#about-us button {
     background-color: var(--purple);
     color: var(--white);
 }
@@ -313,9 +340,36 @@ color: var(--dark-grey);
 }
 
 #get .card {
-    width: 100%;
     padding: 1rem;
-    background-color: brown;
+    background-color: transparent;
+}
+
+#get .col {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#get button {
+    padding: 0.75rem 4rem;
+    color: var(--purple);
+}
+
+#get h3{
+    font-size: 1.5rem;
+    width: 270px;
+    margin: 0 auto;
+}
+
+#get h2.card {
+    font-size: 4rem;
+    color: var(--gold);
+}
+
+#get .card {
+    color: var(--white);
+}
+#get .card:first-child{
+    color: var(--dark-grey);
 }
 
 /*--SECTION--FOOT-*/
@@ -377,7 +431,8 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         display: flex;
         width: calc(100% / 3);
     }
-    #intro img{
+
+    #intro img {
         width: 50%;
     }
 
@@ -396,18 +451,23 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
     #testimonial .card {
         display: flex;
         flex-wrap: wrap;
-        
+
     }
-    #testimonial .col:first-child .card{
+
+    #testimonial .col:first-child .card {
         width: 100%;
     }
-    #testimonial h3{
+
+    #testimonial h3 {
         text-align: left;
     }
-    #testimonial p,#testimonial h3{
+
+    #testimonial p,
+    #testimonial h3 {
         font-size: 0.75rem;
     }
-    #testimonial .info{
+
+    #testimonial .info {
         padding-top: 2rem;
     }
 
@@ -438,10 +498,21 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    #about-us i.fa-quote-left{
-        right: 0px;
+
+    /*--MEDIA--GET--*/
+
+    #get .col {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
-    
+
+    #get p {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #get h3{
+        width: 100%;
+    }
 
 }
 
@@ -451,19 +522,20 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
 
     /*--MEDIA--HEADER--*/
 
-.fa-bars{
-    display: none;
-}
+    .fa-bars {
+        display: none;
+    }
 
-.menu ul {
-    display: block;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-.menu li{
-    margin: 0 10px;
-}
+    .menu ul {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
 
     /*--MEDIA--INTRO--*/
 
@@ -475,26 +547,26 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
         width: 50%;
     }
 
-     /*--MEDIA--STRATEGIC--*/
+    /*--MEDIA--STRATEGIC--*/
 
     #strategic .row {
-        display: flex;        
+        display: flex;
     }
 
     #strategic .col {
         width: calc(100% / 2);
     }
 
-    #strategic .col:first-child{
+    #strategic .col:first-child {
         display: flex;
-       justify-content: flex-end;
+        justify-content: flex-end;
     }
 
     #strategic .col:last-child {
         padding: 8rem 0 2rem;
     }
 
-    #strategic .card{
+    #strategic .card {
         width: 75%;
     }
 
@@ -531,9 +603,6 @@ virgolette giù <i class="fa-solid fa-quote-right"></i>
     #about-us .row {
         display: flex;
         flex-wrap: wrap;
-    }
-    #about-us i.fa-quote-left{
-        right: 110px;
     }
 
     /*--MEDIA--GET--*/
